@@ -1,0 +1,255 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    min-height: 100vh;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgb(0, 0, 0, .3);
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navubaru a {
+    font-size: 1.30rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    /* rienel gwapo */
+    margin-left: 2.5rem;
+} 
+
+.vid-section {
+    background-color: #1d1d1d;
+}
+
+.video {
+    display: flex;
+    justify-content: center;
+    clip-path: inset(1px 1px);
+}
+
+#vid_app {
+    width: 1920px;
+    height: 680px;
+}
+
+.ab_us {
+    background-color: #ebebeb;
+}
+
+.about {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.133;
+    color: #2b2a29;
+    padding-top: 20px;
+}
+
+.pad_ab{
+    font-family: Arial, sans-serif;
+    color: #2b2a29;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-size: 1.375rem;
+    line-height: 1.636;
+    text-align: center;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+}
+
+.text {
+    display: inline-block;
+    text-align: left;
+}
+
+a {
+    color: #2b2a29;
+}
+
+.social_med {
+    background-color: #dad8d5;
+}
+
+.social_med .rb{
+    height: 200px;
+}
+
+.social_med .br {
+    height: 200px;
+}
+
+.imgs {
+    display: flex;
+}
+
+.rb_info, .br_info {
+    flex: 1;
+    padding: 10px; 
+    /* background-color: red; */
+    text-align: center;
+    
+}
+
+.rb_img, .br_img {
+    width: 100%; 
+    text-align: center; 
+    /* background-color: green; */
+}
+
+.rb, .br {
+    max-width: 100%; 
+    height: auto; 
+    /* background-color: blue; */
+}
+
+
+
+
+
+/* Contact Us CCS */
+
+.container_co .con_img {
+    padding-top: 225px;
+    background-color: #1f1f1f;
+    padding-bottom: 25px;
+}
+
+.contactus {
+    font-size: 4em;
+    margin: 0;
+    color: white;
+    padding-top: 1.3em;
+    padding-left: 5.5em;
+    font-family: Arial, sans-serif;
+}
+
+.media {
+    color: #1f1f1f;
+    background-color: #fff;
+    padding-bottom: 3.5em;
+}
+
+.social_contacts {
+    margin-left: 15em;
+    margin-right: 15em;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding-top: 25px;
+}
+
+.social_contacts h3 {
+    font-size: 48px;
+    line-height: 46px;
+}
+
+.media_contacts {
+    display: flex;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+.fb_con .insta_con .gmail_con .link_con{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+}
+
+.log_in {
+    margin-top: 2em;
+    margin-left: 15em;
+    margin-right: 15em;
+    background-color: #282428;
+    border-radius: 50px;
+}
+
+.log_in_con {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif ;
+    padding: 2.25em;
+    font-size: 1.2em;
+}
+
+.log_in_button {
+    margin-right: 25px;
+}
+
+.login {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px 0px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.login:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: grey;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+  
+.login span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: white;
+}
+  
+.login svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: white;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+  
+.login:hover:before {
+    width: 100%;
+    background: black;
+}
+  
+.login:hover svg {
+    transform: translateX(0);
+}
+  
+.login:active {
+    transform: scale(0.95);
+}
+  

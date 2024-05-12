@@ -11,17 +11,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <div class="navbar">
-        <nav>
-            <ul>
-                <li><a href="login.php">Login</a></li>
-                <li><a href="register.php">Sign Up</a></li>
-                <li><a href="adminpage.html">About Us</a></li>
-                <li>Contact Us</li>
-            </ul>
-        </nav>
+    <body>
+        <header class="header">
+            <a href="#" class="logo"> LOGO HERE </a>
+
+            <nav class="navubaru">
+                <a href="login.php">Login</a>
+                <a href="register.php">Sign Up</a>
+                <a href="aboutus.php">About Us</a>
+                <a href="contactus.php">Contact Us</a>
+            </nav>
+        </header>
     
-    
-</body>
+    </body>
 </html>

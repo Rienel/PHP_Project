@@ -7,37 +7,43 @@
     <link rel="stylesheet" href="css/registerstyle.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Register</title>
 </head>
 <body>
-    <h1>Register</h1>
-    <div class="loginForm">
-        <form method="post">
+    <div class="registerForm">
+        <h1 class="registerh1">Register</h1>
+        <form class="forminput" method="post">
+
             <div class="text-input">
-                <label for="username">First Name</label>
                 <input type="text" placeholder="First Name" id="firstname" name="txtfirstname">
             </div>
+
             <div class="text-input">
-                <label for="username">Last Name</label>
                 <input type="text" placeholder="Last Name" id="lastname" name="txtlastname">
             </div>
+
             <div class="text-input">
-                <label for="username">Gender</label>
                 <input type="text" placeholder="Gender" id="gender" name="txtgender">
             </div>
+
             <div class="text-input">
-                <label for="username">Email</label>
                 <input type="text" placeholder="Email" id="username" name="txtemail">
             </div>
+
             <div class="text-input">
-                <label for="username">Username</label>
                 <input type="text" placeholder="Username" id="lastname" name="txtusername">
             </div>
+
             <div class="text-input">
-                <label for="password">Password</label>
                 <input type="text" placeholder="Password" id="password" name="txtpassword">
             </div>
-            <?php	
+            
+            <button type="submit" class="Register" name="btnRegister">Register</button>
+
+            <p class="login-link" >Already have an account? <a href="login.php">Log in here</a>.</p>
+        </form>
+        
+        <?php	
                 if(isset($_POST['btnRegister'])){		
                     //retrieve data from form and save the value to a variable
                     //for tbluserprofile
@@ -51,7 +57,7 @@
                     $pword=$_POST['txtpassword'];
                     
                     //save data to tbluserprofile			
-                    $sql1 ="Insert into tbluserprofile1(firstname,lastname,gender) values('".$fname."','".$lname."','".$gender."')";    
+                    $sql1 ="Insert into tbluserprofile(firstname,lastname,gender) values('".$fname."','".$lname."','".$gender."')";    
                     mysqli_query($connection,$sql1);
                     
                     //Check tbluseraccount if username is already existing. Save info if false. Prompt msg if true.
@@ -66,19 +72,6 @@
                     }else{
                             echo "<p style='color:red;'>Username already exists.</p> <br>";
                     }
-                        
-                    
-                }    
-
+                }   
             ?>
-            <div class="login-button">
-                <button type="submit" name="btnRegister">Register</button>
-            </div>
-            <p>Already have an account? <a href="login.php">Log in here</a>.</p>
-        </form>
-        
-
-
-
-
-
+</body>

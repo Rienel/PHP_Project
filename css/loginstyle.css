@@ -1,86 +1,102 @@
 * {
     font-family: sans-serif;
     margin: 0;
-    box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box; 
 }
 
 body {
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    background-color: #1f1f1f;
 }
 
 .loginForm {
-    border-radius: 5px;
-    color: white;
-    width: 527px;;
+    border-radius: 15px;
+    width: 420px;
     background: #191414;
-    padding: 70px 80px; 
+    padding: 30px 40px;
+    color: white;
 }
 
-h1 {
-    font-size: 45px;
+.loginForm h1 {
+    font-size: 35px;
     text-align: center;
 }
 
-.text-input {
-    color: white;
-    display: flex;
-    flex-direction: column;
-    font-size: 15px;
-    font-weight: bold;
-    justify-content: space-between;
+.loginForm .text-input {
     width: 100%;
-    height: 65px;
-    margin-bottom: 15px;
+    height: 50px;
+    margin: 30px 0;
 }
 
 .text-input input {
+    width: 100%;
+    height: 100%;
     background: transparent;
-    color: white;
-    font-size: 17px;
-    border-radius: 5px;
-    border-color: #b3b3b3;
-    border-width: 2px;
-    height: 39px;
-    padding: 9px;
-    
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    color: #fff;
+    padding: 20px 45px 20px 20px;
 }
 
-.password-option {
-    accent-color: #fff;
+.loginForm .password-option {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.password-option label input {
+    accent-color: #fff;
+    margin-right: 3px;
 }
 
 .password-option a {
-    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
 }
 
 .password-option a:hover {
     text-decoration: underline;
-    cursor: pointer;
 }
 
-.login-button button {
-    background: #525CEB;
-    border-radius: 35px;
-    font-size: 18px;
-    font-weight: bold;
+.loginForm .login-button {
     width: 100%;
     height: 45px;
-    margin: 35px 0;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
 }
 
-.login-button button:hover {
-    background: white;
-    color: black;
+.loginForm .register-link {
+    font-size: 16px;
+    text-align: center;
+    margin: 20px 0 15px;
 }
 
+.register-link p a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 600;
+}
 
+.register-link p a:hover {
+    text-decoration: underline;
+}
 
 .loginForm p {
     font-size: 16px;
@@ -98,4 +114,11 @@ h1 {
 
 label {
     margin-left: 2px;
+}
+
+.message-box {
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    background: #191414;
 }
