@@ -37,7 +37,8 @@ session_start();
     <div class="container">
         <div class="top" id="btnDashboard" id="btnDashboard">
             <i class="fa-solid fa-house"></i>
-            <button id="btnLike" name="btnLike"><i class="fa-solid fa-magnifying-glass"></i></button>
+            <button id="btnLike" name="btnLike">
+                <i class="fa-solid fa-magnifying-glass"></i></button>
         </div>
         <?php
             echo "<img class='cover-image' src='images/song".$songid.".jpg'></img>";

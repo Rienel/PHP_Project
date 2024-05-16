@@ -18,7 +18,7 @@ session_start();
         src="https://code.jquery.com/jquery-3.7.1.min.js"
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
         crossorigin="anonymous"></script>
-    <title>Document</title>
+    <title>Dashboard</title>
 </head>
 <body>
     <div class="sidebar">
@@ -89,9 +89,9 @@ session_start();
     <div class="main-section">
         <div class="top-nav">
             <div class="username">
-            <?php
+                <?php
                         echo "<span>".$_SESSION['username']."<span>";
-                    ?>
+                ?>
             </div>
         </div>
         <div class="playlist">
@@ -153,7 +153,7 @@ session_start();
                     <input type="text" placeholder="Playlist name" name="txtplaylist">
             </div>
             <div class="btnSubmit">
-                    <button type="submit" id="createPlaylist" name="btnCreate">Create</button>
+                    <button class="buttonCreate" type="submit" id="createPlaylist" name="btnCreate">Create</button>
             </div>
             </form>
             <?php	
@@ -216,6 +216,3 @@ session_start();
     
 </body>
 </html>
-    
-            
-            

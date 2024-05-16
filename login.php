@@ -2,7 +2,9 @@
     include 'connect.php';
     // require_once 'includes/header.php';
 ?>
-
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -50,7 +52,8 @@
                     }else if(password_verify($pwd, $row[3])) {
                         echo '<div class="message-box">Incorrect Password</div>';
                     }else{
-                        $_SESSION['username']=$row[0];
+                        $_SESSION['username']=$row[2];
+                        $_SESSION['accountid']=$row[0];
                         header("location: dashboard.php");
                     }
                 }
