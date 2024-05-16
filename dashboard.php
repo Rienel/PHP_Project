@@ -184,8 +184,7 @@ session_start();
             <?php
                         while($row = $resultset->fetch_assoc()):
                     ?>
-                    
-                    
+                      
                     <?php
                     echo "<div class='item'>
                     <a href='deleteplaylists.php?id=".$row['playlistid']."'>x</a>

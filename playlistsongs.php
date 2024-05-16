@@ -104,14 +104,14 @@ $resultset = $mysqli->query("SELECT tblsongs.songid, tblartist.name, tblsongs.ti
     <div class="playlist-form">
         <div class="edit-playlist">
             <div class="btnClose"><button id="btnClose">&#10006</button></div>
-            <span>Edit Playlist</span>
+                <span>Edit Playlist</span>
             <div class="playlist-name">
                 <form method="post">
                     <input type="text" placeholder="Playlist name" name="txteditplaylist">
-            </div>
-            <div class="btnSubmit">
-                <button type="submit" id="createPlaylist" name="btnEdit">Save</button>
-            </div>
+                        </div>
+                    <div class="btnSubmit">
+                        <button type="submit" id="createPlaylist" name="btnEdit">Save</button>
+                    </div>
             </form>
             <?php	
                 if(isset($_POST['btnEdit'])) {		
@@ -133,8 +133,13 @@ $resultset = $mysqli->query("SELECT tblsongs.songid, tblartist.name, tblsongs.ti
     $("#btnEditPlaylist").click(function() {
         $(".playlist-form").css("display", "flex");
     })
+
     $("#btnClose").click(function() {
         $(".playlist-form").css("display", "none");
+    })
+
+    $("#btnSubmit").click(function() {
+        $(".playlist-form").css("display", "flex");
     })
 </script>
 </body>

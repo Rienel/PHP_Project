@@ -1,16 +1,16 @@
 <?php 
     include 'connect.php';
     $id = $_GET['id'];
-   
     
-    // sql to delete a record
-    $sql = "DELETE FROM tblplaylist WHERE playlistid = $id";
+    $stmt = $connection->prepare("UPDATE tblplaylist SET isRemoved = 1 WHERE playlistid = ?");
+    $stmt->bind_param("i", $id);
     
-    if (mysqli_query($connection, $sql)) {
-        mysqli_close($connection);
-        header('Location: dashboard.php'); //If book.php is your main page where you list your all records
+    if ($stmt->execute()) {
+        $stmt->close();
+        $connection->close();
+        header('Location: dashboard.php'); 
         exit;
     } else {
-        echo "Error deleting record";
+        echo "Error updating record";
     }
 ?>
