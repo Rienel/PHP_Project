@@ -22,9 +22,6 @@
                     $playlistname=$_POST['txtplaylistname'];
                     echo "<p>'Error deleting record'</p>";
                     
-                    
-                    
-                    
                     //save data to tbluserprofile			
                     $sql1 ="UPDATE tblplaylist
                             SET playlistname = '$playlistname'

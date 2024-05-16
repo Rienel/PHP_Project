@@ -13,7 +13,7 @@ session_start();
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
     integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <title>Artist Songs</title>
 </head>
 <?php
     
@@ -89,7 +89,6 @@ session_start();
                     ?>
                     <?php
                     echo "<div class='item'>
-                    <a href='deletesong.php?id=".$row['songid']."'>x</a>
                             <img src='images/song".$row['songid'].".jpg'>
                             <a href='musicpage.php?id=".$row['songid']."'>
                             <div class='btnPlay' onclick='location.href=''''>

@@ -1,8 +1,6 @@
-
 <?php 
     include 'connect.php';
     $id = $_GET['id'];
-   
     
     // sql to delete a record
     $sql = "DELETE FROM tblplaylist WHERE playlist = $id";

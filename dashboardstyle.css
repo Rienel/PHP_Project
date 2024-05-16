@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.3rem 10%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background: rgb(0, 0, 0, .3);
+}
+
+.logo {
+    font-size: 2rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.navubaru a {
+    font-size: 1.30rem;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    /* rienel gwapo */
+    margin-left: 2.5rem;
+} 
+
+.content {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+    width: 755px;
+}
+
+.content h1 {
+    text-align: center;
+}
+
+.content p {
+    text-align: center;
+}
+
+.registered-users-table {
+    margin-top: 105px;
+}
+
+.registered-users h1 {
+    text-align: center;
+}
+
+.registered-users-table table {
+    text-align: center;
+}
+
+.user-playlist .create-playlist {
+    font-size: 25px;
+}
+
+.tbl {
+    margin-top: 35px;
+    padding: 255px;
+}
+
+.tbl table {
+    border: 3px solid rgb(115, 4, 62);
+    margin-bottom: 75px;
+    table-layout: fixed;
+}
+
+h1 {
+    margin-top: 25px;
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.tbl table th {
+    border: 3px solid rgb(115, 4, 62);
+    font-size: 28px;
+}
+
+.tbl table td {
+    border: 3px solid rgb(115, 4, 62);
+    font-size: 19px;
+}

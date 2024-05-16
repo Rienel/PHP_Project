@@ -89,7 +89,6 @@ session_start();
                     ?>
                     <?php
                     echo "<div class='item'>
-                    <a href='deletesong.php?id=".$row['songid']."'>x</a>
                             <img src='images/song".$row['songid'].".jpg'>
                             <a href='musicpage.php?id=".$row['songid']."'>
                             <div class='btnPlay' onclick='location.href=''''>

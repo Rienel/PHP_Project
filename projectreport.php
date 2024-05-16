@@ -9,17 +9,27 @@ session_start();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/dashboardstyle.css">
+    <link rel="stylesheet" href="dashboardstyle.css">
     <title>Document</title>
 </head>
 <body>
+
+        <header class="header">
+            <a href="#" class="logo"> LOGO </a>
+
+            <nav class="navubaru">
+                <a href="dashboard.php">Home</a>
+                <a href="aboutus.php">About Us</a>
+                <a href="contactus.php">Contact Us</a>
+            </nav>
+        </header>
+
     <h1>Project Report</h1>
     <div class="tbl">
         <h2>List Of Playlists Created by User johndoe</h2>
     <table class="table" cellspacing="0" width="100%" style="text-align: center;">
         <thead>
             <tr>
-                <th>User ID</th>
                 <th>Playlist ID</th>
                 <th>Playlist Name</th>
             </tr>
@@ -30,7 +40,6 @@ session_start();
                 $resultset = $mysqli->query("SELECT * from tblplaylist WHERE tblplaylist.userid = ".$_SESSION['accountid']."") or die ($mysqli->error);
                 while($row = $resultset->fetch_assoc()):
                 echo "<tr>
-                    <td>".$_SESSION['accountid']."</td>
                     <td>".$row['playlistid']."</td>
                     <td>".$row['playlistname']."</td>
                     </tr>";

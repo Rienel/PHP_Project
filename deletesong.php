@@ -5,7 +5,6 @@ session_start();
     include 'connect.php';
     $songid = $_GET['id'];
    
-    
     // sql to delete a record
     $sql = "DELETE FROM tblplaylistsongs WHERE songid = $songid and ".$_SESSION['playlistid']." = playlistid";
     
