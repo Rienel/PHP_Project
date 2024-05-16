@@ -138,6 +138,8 @@ $resultset = $mysqli->query("SELECT tblsongs.songid, tblartist.name, tblsongs.ti
         $(".playlist-form").css("display", "none");
     })
 
+    //pop up ni pra conformation
+
     $("#btnSubmit").click(function() {
         $(".playlist-form").css("display", "flex");
     })
